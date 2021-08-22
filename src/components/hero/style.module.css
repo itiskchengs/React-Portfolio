@@ -1,0 +1,108 @@
+.heroContainer {
+  height: 100vh;
+  background: #6c809a;
+}
+
+.heroContainer .heroTextContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  height: 90vh;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.heroContainer .heroTextContainer #heroTextAnimationHeading {
+  color: #7ae7c7;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  font-size: 3.8rem;
+  margin: 0;
+}
+
+.heroContainer .heroTextContainer #heroTextAnimationHeading::after {
+  content: '';
+  position: relative;
+  width: 1px;
+  right: -5px;
+  height: 90%;
+  border-right: 2px solid #7ae7c7;
+  animation: blink 1s linear infinite;
+}
+
+.heroContainer .heroTextContainer #heroTextHeadingTwo {
+  color: #f4f4f9;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  font-size: 2.3rem;
+  margin: 0;
+}
+
+.heroContainer .heroTextContainer .heroCtaBtnContainer {
+  margin-top: 3rem;
+}
+
+.heroContainer .heroTextContainer .heroCtaBtnContainer #heroCtaBtn {
+  color: #f4f4f9;
+  border: 0.1rem solid #7ae7c7;
+  padding: 1.25rem 1.75rem;
+  line-height: 1;
+  font-size: 1rem;
+  border-radius: 0.2rem;
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+
+.heroContainer .heroTextContainer .heroCtaBtnContainer #heroCtaBtn:hover, .heroContainer .heroTextContainer .heroCtaBtnContainer #heroCtaBtn:focus {
+  box-shadow: inset 0 -3.25em 0 0 #7ae7c7;
+  color: #f4f4f9;
+  transition: 0.35s;
+  border-color: #7ae7c7;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  .heroContainer .heroTextContainer {
+    width: 50% !important;
+    height: 80vh;
+  }
+  .heroContainer .heroTextContainer #heroTextAnimationHeading {
+    font-size: 4rem;
+  }
+  .heroContainer .heroTextContainer #heroTextHeadingTwo {
+    font-size: 4rem;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .heroContainer .heroTextContainer {
+    width: 50% !important;
+    height: 80vh;
+  }
+  .heroContainer .heroTextContainer #heroTextAnimationHeading {
+    font-size: 6rem;
+  }
+  .heroContainer .heroTextContainer #heroTextHeadingTwo {
+    font-size: 6rem;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  #heroCtaBtn {
+    padding: 1rem 3rem;
+  }
+}
+/*# sourceMappingURL=style.module.css.map */

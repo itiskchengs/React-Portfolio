@@ -1,0 +1,43 @@
+//Colors
+$blue: rgb(16, 43, 63);
+$gray: rgb(108, 128, 154);
+$yellow: rgb(248, 198, 48);
+$aquamarine: rgb(122, 231, 199);
+$offWhite: rgb(244, 244, 249);
+
+
+//fonts
+$font: 'Roboto',
+sans-serif;
+
+//Weights
+$extra-bold: 900;
+$bold: 700;
+$medium: 500;
+$regular: 400;
+$light: 300;
+$thin: 100;
+
+//mixins
+
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
+}
+
+@mixin media-md {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin media-lg {
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin media-xl {
+    @media screen and (min-width: 1600px) {
+        @content;
+    }
+}

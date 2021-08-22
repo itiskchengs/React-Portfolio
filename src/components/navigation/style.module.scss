@@ -1,0 +1,229 @@
+@import "../../variables/variables.scss";
+
+.header {
+    padding: 1.5rem 0rem;
+    background: $gray;
+}
+
+.menuBtn {
+    position: absolute;
+    z-index: 999;
+    right: 2rem;
+    top: 3rem;
+    height: 2rem;
+    width: 2.8rem;
+    cursor: pointer;
+    @include transition-ease;
+
+    .menuBtnBurger {
+        position: absolute;
+        right: 0;
+        top: 0.5rem;
+        width: 2.8rem;
+        height: 0.3rem;
+        background: $offWhite;
+        @include transition-ease;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: -0.8rem;
+            width: 2.8rem;
+            height: 0.3rem;
+            background: $offWhite;
+            @include transition-ease;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0.8rem;
+            width: 2rem;
+            height: 0.3rem;
+            background: $offWhite;
+            @include transition-ease;
+        }
+
+        &.open {
+            transform: rotate(720deg);
+            background: transparent;
+
+            &::before {
+                transform: rotate(45deg) translate(5px, 8px);
+            }
+
+            &::after {
+                width: 28px;
+                transform: rotate(-45deg) translate(3px, -7px);
+            }
+        }
+    }
+}
+
+/*
+.navLogo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    cursor: pointer;
+    padding: 1rem 1.5rem;
+    width: 30%;
+    margin: 1rem 1.5rem;
+    color: $offWhite;
+
+    img {
+        width: 30%;
+    }
+}
+*/
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    opacity: 0.98;
+    visibility: hidden;
+    z-index: 1;
+
+    &.open {
+        visibility: visible;
+    }
+
+    .navLogo img {
+        width: 42px;
+        height: 42px;
+    }
+    .navLogo{
+        display: flex;
+        position: absolute;
+        justify-content: flex-start;
+        margin: 2rem 0rem 0rem 2rem;
+        visibility: visible;
+    }
+
+    .navItemsContainer {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        overflow: hidden;
+        background: $blue;
+        list-style: none;
+        padding-right: 1rem;
+        transform: translateY(-100%);
+        margin-top: 0;
+        @include transition-ease;
+
+        &.open {
+            transform: translateY(0);
+        }
+
+        .item {
+            transform: translateX(100vw);
+            display: inline-block;
+            font-size: 2rem;
+            text-transform: uppercase;
+            padding: 1.5rem 0;
+            font-weight: 300;
+            color: $offWhite;
+            @include transition-ease;
+
+            &.open {
+                transform: translateX(0);
+            }
+
+            &:hover {
+                color: $aquamarine;
+            }
+        }
+    }
+}
+
+@for $i from 1 through 4 {
+    .item:nth-child(#{$i}) {
+        transition-delay: ($i * 0.1s) + 0.15s;
+    }
+}
+
+@include media-md {
+    .header {
+        display: flex;
+    }
+
+    .menuBtn {
+        visibility: hidden;
+    }
+
+    .nav {
+        visibility: visible;
+        display: flex;
+        -moz-box-pack: justify;
+        justify-content: space-between;
+        -moz-box-align: center;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        padding: 2rem 4rem;
+
+        .navLogo img {
+            width: 42px;
+            height: 42px;
+        }
+        .navLogo{
+            display: flex;
+            -moz-box-pack: center;
+            justify-content: center;
+            -moz-box-align: center;
+            align-items: center;
+            position: relative;
+            margin: 0rem;
+        }
+
+        .navItemsContainer {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-end;
+            align-items: center;
+            transform: none;
+            height: 100%;
+            background: transparent;
+            margin: 0;
+
+            .item {
+                transform: none;
+                padding: 0rem 1.5rem;
+                font-size: 1.6rem;
+                line-height: 1.3;
+                letter-spacing: 0.1rem;
+
+                &:hover {
+                    text-decoration: none;
+                    color: $aquamarine;
+
+                    &::after {
+                        width: 100%;
+                        transition: width .3s;
+                    }
+
+                }
+
+                &::after {
+                    content: '';
+                    display: block;
+                    width: 0px;
+                    height: 0.15rem;
+                    background: $aquamarine;
+                    transition: width .3s;
+                }
+            }
+
+        }
+    }
+}
+
+@include media-lg {}
+
+@include media-xl {}
