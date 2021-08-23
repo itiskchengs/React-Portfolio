@@ -1,0 +1,153 @@
+@import "../../variables/variables.scss";
+
+.aboutContainer {
+    height: 100vh;
+    background: #12263A;
+    display: flex;
+
+    .sectionAboutContainer {
+        width: 70%;
+        margin: auto;
+
+        .aboutSmallHeadingContainer {
+
+            display: flex;
+            align-items: center;
+
+            .smallAboutHeading {
+                margin: 0;
+                color: $offWhite;
+                font-size: 2rem;
+            }
+
+            .smallAboutHeadingLine {
+                width: 10%;
+                text-align: left;
+                margin-left: 1.5rem;
+                margin-right: auto;
+            }
+        }
+
+        .bigAboutHeading {
+            margin: 0;
+            padding-top: 1rem;
+            color: $offWhite;
+            font-size: 5rem;
+        }
+
+        .aboutInformationContainer {
+
+            display: flex;
+            flex-direction: column;
+
+            .aboutInformation {
+                width: 100%;
+                padding-top: 2rem;
+                color: $offWhite;
+                font-size: 1.6rem;
+                line-height: 2;
+                padding-right: 7rem;
+
+                &p {
+                    color: $offWhite;
+                }
+            }
+            
+            .technologyContainer{
+                display: flex;
+
+                .technologyList{
+                    color: $offWhite;
+                    padding: 0rem 2rem;
+
+                }
+            }
+
+            .aboutImageContainer{
+                width: 50%;
+
+            }
+            .aboutImageContainer img{
+                width: 100%;
+                border-radius: 1rem;
+            }
+        }
+    }
+}
+
+@include media-md{
+    .aboutContainer {
+        height: 100vh;
+        background: #12263A;
+        display: flex;
+    
+        .sectionAboutContainer {
+            width: 70%;
+            margin: auto;
+    
+            .aboutSmallHeadingContainer {
+    
+                display: flex;
+                align-items: center;
+    
+                .smallAboutHeading {
+                    margin: 0;
+                    color: $offWhite;
+                    font-size: 2rem;
+                }
+    
+                .smallAboutHeadingLine {
+                    width: 10%;
+                    text-align: left;
+                    margin-left: 1.5rem;
+                    margin-right: auto;
+                }
+            }
+    
+            .bigAboutHeading {
+                margin: 0;
+                padding-top: 1rem;
+                color: $offWhite;
+                font-size: 5rem;
+            }
+    
+            .aboutInformationContainer {
+    
+                display: flex;
+                flex-direction: row;
+    
+                .aboutInformation {
+                    width: 100%;
+                    padding-top: 2rem;
+                    color: $offWhite;
+                    font-size: 1.6rem;
+                    line-height: 2;
+                    padding-right: 7rem;
+    
+                    &p {
+                        color: $offWhite;
+                    }
+                }
+                
+                .technologyContainer{
+                    display: flex;
+    
+                    .technologyList{
+                        color: $offWhite;
+                        padding: 0rem 2rem;
+    
+                    }
+                }
+    
+                .aboutImageContainer{
+                    width: 50%;
+    
+                }
+                .aboutImageContainer img{
+                    width: 100%;
+                    border-radius: 1rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,134 @@
+.aboutContainer {
+  height: 100vh;
+  background: #12263A;
+  display: flex;
+}
+
+.aboutContainer .sectionAboutContainer {
+  width: 70%;
+  margin: auto;
+}
+
+.aboutContainer .sectionAboutContainer .aboutSmallHeadingContainer {
+  display: flex;
+  align-items: center;
+}
+
+.aboutContainer .sectionAboutContainer .aboutSmallHeadingContainer .smallAboutHeading {
+  margin: 0;
+  color: #f4f4f9;
+  font-size: 2rem;
+}
+
+.aboutContainer .sectionAboutContainer .aboutSmallHeadingContainer .smallAboutHeadingLine {
+  width: 10%;
+  text-align: left;
+  margin-left: 1.5rem;
+  margin-right: auto;
+}
+
+.aboutContainer .sectionAboutContainer .bigAboutHeading {
+  margin: 0;
+  padding-top: 1rem;
+  color: #f4f4f9;
+  font-size: 5rem;
+}
+
+.aboutContainer .sectionAboutContainer .aboutInformationContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutContainer .sectionAboutContainer .aboutInformationContainer .aboutInformation {
+  width: 100%;
+  padding-top: 2rem;
+  color: #f4f4f9;
+  font-size: 1.6rem;
+  line-height: 2;
+  padding-right: 7rem;
+}
+
+.aboutContainer .sectionAboutContainer .aboutInformationContainer .aboutInformationp {
+  color: #f4f4f9;
+}
+
+.aboutContainer .sectionAboutContainer .aboutInformationContainer .technologyContainer {
+  display: flex;
+}
+
+.aboutContainer .sectionAboutContainer .aboutInformationContainer .technologyContainer .technologyList {
+  color: #f4f4f9;
+  padding: 0rem 2rem;
+}
+
+.aboutContainer .sectionAboutContainer .aboutInformationContainer .aboutImageContainer {
+  width: 50%;
+}
+
+.aboutContainer .sectionAboutContainer .aboutInformationContainer .aboutImageContainer img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .aboutContainer {
+    height: 100vh;
+    background: #12263A;
+    display: flex;
+  }
+  .aboutContainer .sectionAboutContainer {
+    width: 70%;
+    margin: auto;
+  }
+  .aboutContainer .sectionAboutContainer .aboutSmallHeadingContainer {
+    display: flex;
+    align-items: center;
+  }
+  .aboutContainer .sectionAboutContainer .aboutSmallHeadingContainer .smallAboutHeading {
+    margin: 0;
+    color: #f4f4f9;
+    font-size: 2rem;
+  }
+  .aboutContainer .sectionAboutContainer .aboutSmallHeadingContainer .smallAboutHeadingLine {
+    width: 10%;
+    text-align: left;
+    margin-left: 1.5rem;
+    margin-right: auto;
+  }
+  .aboutContainer .sectionAboutContainer .bigAboutHeading {
+    margin: 0;
+    padding-top: 1rem;
+    color: #f4f4f9;
+    font-size: 5rem;
+  }
+  .aboutContainer .sectionAboutContainer .aboutInformationContainer {
+    display: flex;
+    flex-direction: row;
+  }
+  .aboutContainer .sectionAboutContainer .aboutInformationContainer .aboutInformation {
+    width: 100%;
+    padding-top: 2rem;
+    color: #f4f4f9;
+    font-size: 1.6rem;
+    line-height: 2;
+    padding-right: 7rem;
+  }
+  .aboutContainer .sectionAboutContainer .aboutInformationContainer .aboutInformationp {
+    color: #f4f4f9;
+  }
+  .aboutContainer .sectionAboutContainer .aboutInformationContainer .technologyContainer {
+    display: flex;
+  }
+  .aboutContainer .sectionAboutContainer .aboutInformationContainer .technologyContainer .technologyList {
+    color: #f4f4f9;
+    padding: 0rem 2rem;
+  }
+  .aboutContainer .sectionAboutContainer .aboutInformationContainer .aboutImageContainer {
+    width: 50%;
+  }
+  .aboutContainer .sectionAboutContainer .aboutInformationContainer .aboutImageContainer img {
+    width: 100%;
+    border-radius: 1rem;
+  }
+}
+/*# sourceMappingURL=style.module.css.map */

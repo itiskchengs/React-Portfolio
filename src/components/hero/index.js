@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import style from "./style.module.css";
+import wave from "../../assets/img/wave5.svg";
 
 const Hero = () => {
   const [letters, setLetters] = useState("");
@@ -27,11 +28,14 @@ const Hero = () => {
         <div>
           <h2 id={style.heroTextHeadingTwo}>I build things for the web</h2>
         </div>
-        <div className = {style.heroCtaBtnContainer}>
+        <div className={style.heroCtaBtnContainer}>
           <a id={style.heroCtaBtn} href="../index.html">
             Get In Touch
           </a>
         </div>
+      </div>
+      <div class={style.waveContainer}>
+        <img id={style.waveImage} src={wave} alt="wave image"></img>
       </div>
     </div>
   );

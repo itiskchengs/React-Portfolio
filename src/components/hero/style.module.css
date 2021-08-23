@@ -1,6 +1,7 @@
 .heroContainer {
   height: 100vh;
   background: #6c809a;
+  position: relative;
 }
 
 .heroContainer .heroTextContainer {
@@ -65,6 +66,25 @@
   text-decoration: none;
 }
 
+.heroContainer .waveContainer {
+  position: absolute;
+  bottom: -4px;
+  width: 100%;
+}
+
+.heroContainer #waveImage {
+  background: #6c809a;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .heroContainer .heroTextContainer {
     width: 50% !important;
@@ -75,15 +95,6 @@
   }
   .heroContainer .heroTextContainer #heroTextHeadingTwo {
     font-size: 4rem;
-  }
-}
-
-@keyframes blink {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
   }
 }
 
