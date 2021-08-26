@@ -1,0 +1,100 @@
+@import "../../variables/variables.scss";
+
+.projectSection {
+    height: 100%;
+    background: #12263A;
+    display: flex;
+    padding-top: 10rem;
+
+    .projectContainer {
+        width: 80%;
+        margin: auto;
+
+        .projectSmallHeadingContainer {
+
+            display: flex;
+            align-items: center;
+
+            .smallProjectHeading {
+                margin: 0;
+                color: $offWhite;
+                font-size: 2rem;
+            }
+
+            .smallProjectHeadingLine {
+                width: 10%;
+                text-align: left;
+                margin-left: 1.5rem;
+                margin-right: auto;
+            }
+        }
+
+        .bigProjectHeading {
+            margin: 0;
+            padding-top: 1rem;
+            color: $offWhite;
+            font-size: 5rem;
+        }
+
+        .projectItemsContainer {
+            display: flex;
+            flex-direction: column;
+
+            .projectTitle {
+                color: $gray;
+                font-size: 3rem;
+            }
+
+            .projectDescription {
+                color: $offWhite;
+                font-size: 1.6rem;
+                line-height: 1.5;
+                font-weight: 300;
+            }
+
+            .projectLanguages {
+                color: $offWhite;
+                font-size: 1.6rem;
+                line-height: 1.5;
+                font-weight: 300;
+            }
+
+            .projectButtonsContainer {
+                padding-top: 2rem;
+
+                a {
+                    padding: 1rem 2rem;
+                    background: $aquamarine;
+                    color: #000;
+                    text-decoration: none;
+                    margin: 1rem;
+                    font-size: 1.2rem;
+                    border-radius: 0.4rem;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@include media-md {
+    .projectSection {
+        .projectContainer {
+            width: 70%;
+
+            .projectItems {
+                display: flex;
+                flex-direction: row;
+                align-content: space-between;
+                justify-content: space-between;
+                margin: 4rem;
+
+                .paragraph{
+                    width: 50%;
+                }
+            }
+        }
+    }
+}

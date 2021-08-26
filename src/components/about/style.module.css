@@ -1,11 +1,12 @@
 .aboutContainer {
-  height: 100vh;
+  height: 100%;
   background: #12263A;
   display: flex;
+  padding-top: 10rem;
 }
 
 .aboutContainer .sectionAboutContainer {
-  width: 70%;
+  width: 80%;
   margin: auto;
 }
 
@@ -45,7 +46,7 @@
   color: #f4f4f9;
   font-size: 1.6rem;
   line-height: 2;
-  padding-right: 7rem;
+  padding-right: 0rem;
 }
 
 .aboutContainer .sectionAboutContainer .aboutInformationContainer .aboutInformationp {
@@ -62,7 +63,9 @@
 }
 
 .aboutContainer .sectionAboutContainer .aboutInformationContainer .aboutImageContainer {
-  width: 50%;
+  width: 85%;
+  margin: auto;
+  padding-top: 2.5rem;
 }
 
 .aboutContainer .sectionAboutContainer .aboutInformationContainer .aboutImageContainer img {
@@ -125,6 +128,8 @@
   }
   .aboutContainer .sectionAboutContainer .aboutInformationContainer .aboutImageContainer {
     width: 50%;
+    margin: 0;
+    padding: 0;
   }
   .aboutContainer .sectionAboutContainer .aboutInformationContainer .aboutImageContainer img {
     width: 100%;

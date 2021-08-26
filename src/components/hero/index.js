@@ -34,8 +34,8 @@ const Hero = () => {
           </a>
         </div>
       </div>
-      <div class={style.waveContainer}>
-        <img id={style.waveImage} src={wave} alt="wave image"></img>
+      <div className={style.waveContainer}>
+        <img id={style.waveImage} src={wave} alt="wave"></img>
       </div>
     </div>
   );

@@ -60,7 +60,7 @@ const About = () => {
             </div>
           </div>
           <div className={style.aboutImageContainer}>
-            <img src={Profile} alt="Profile picture"></img>
+            <img src={Profile} alt="Kenny"></img>
           </div>
         </div>
       </div>

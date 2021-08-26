@@ -1,0 +1,91 @@
+.projectSection {
+  height: 100%;
+  background: #12263A;
+  display: flex;
+  padding-top: 10rem;
+}
+
+.projectSection .projectContainer {
+  width: 80%;
+  margin: auto;
+}
+
+.projectSection .projectContainer .projectSmallHeadingContainer {
+  display: flex;
+  align-items: center;
+}
+
+.projectSection .projectContainer .projectSmallHeadingContainer .smallProjectHeading {
+  margin: 0;
+  color: #f4f4f9;
+  font-size: 2rem;
+}
+
+.projectSection .projectContainer .projectSmallHeadingContainer .smallProjectHeadingLine {
+  width: 10%;
+  text-align: left;
+  margin-left: 1.5rem;
+  margin-right: auto;
+}
+
+.projectSection .projectContainer .bigProjectHeading {
+  margin: 0;
+  padding-top: 1rem;
+  color: #f4f4f9;
+  font-size: 5rem;
+}
+
+.projectSection .projectContainer .projectItemsContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.projectSection .projectContainer .projectItemsContainer .projectTitle {
+  color: #6c809a;
+  font-size: 3rem;
+}
+
+.projectSection .projectContainer .projectItemsContainer .projectDescription {
+  color: #f4f4f9;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+.projectSection .projectContainer .projectItemsContainer .projectLanguages {
+  color: #f4f4f9;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+.projectSection .projectContainer .projectItemsContainer .projectButtonsContainer {
+  padding-top: 2rem;
+}
+
+.projectSection .projectContainer .projectItemsContainer .projectButtonsContainer a {
+  padding: 1rem 2rem;
+  background: #7ae7c7;
+  color: #000;
+  text-decoration: none;
+  margin: 1rem;
+  font-size: 1.2rem;
+  border-radius: 0.4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .projectSection .projectContainer {
+    width: 70%;
+  }
+  .projectSection .projectContainer .projectItems {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: space-between;
+    margin: 4rem;
+  }
+  .projectSection .projectContainer .projectItems .paragraph {
+    width: 50%;
+  }
+}
+/*# sourceMappingURL=style.module.css.map */

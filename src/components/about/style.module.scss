@@ -1,12 +1,13 @@
 @import "../../variables/variables.scss";
 
 .aboutContainer {
-    height: 100vh;
+    height: 100%;
     background: #12263A;
     display: flex;
+    padding-top: 10rem;
 
     .sectionAboutContainer {
-        width: 70%;
+        width: 80%;
         margin: auto;
 
         .aboutSmallHeadingContainer {
@@ -46,7 +47,7 @@
                 color: $offWhite;
                 font-size: 1.6rem;
                 line-height: 2;
-                padding-right: 7rem;
+                padding-right: 0rem;
 
                 &p {
                     color: $offWhite;
@@ -64,7 +65,9 @@
             }
 
             .aboutImageContainer{
-                width: 50%;
+                width: 85%;
+                margin: auto;
+                padding-top: 2.5rem;
 
             }
             .aboutImageContainer img{
@@ -141,6 +144,8 @@
     
                 .aboutImageContainer{
                     width: 50%;
+                    margin: 0;
+                    padding: 0;
     
                 }
                 .aboutImageContainer img{
