@@ -12,7 +12,7 @@ export const projectData = [
         id: 2,
         image:'domu',
         projectTitle: 'Domu',
-        projectDescription: 'Domu is a neighborhood restaurant and bar that offered house made noodles, creative takes on small plates and seasonal cocktails. I decided to take on this personal project and redesign there current site. I felt that I could give a diferent design spin on it, improve the user experience and a more friendly experience. The website is built with JavaScript, CSS, HTML, Bootstrap5 and GSAP',
+        projectDescription: 'Domu is a neighborhood restaurant and bar that offered house made noodles, creative takes on small plates and seasonal cocktails. I decided to take on this personal project and redesign there current site. I felt that I could give a diferent design spin on it, improve the user experience and a more friendly experience.',
         projectLanguages: 'JavaScript, CSS, HTML and Bootstrap',
         githubLink:'https://github.com/itiskchengs/Domu_Project',
         deployedLink:'https://itiskchengs.github.io/Domu_Project/',

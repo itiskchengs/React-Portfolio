@@ -1,0 +1,13 @@
+.footerContainer {
+  background: #12263A;
+  padding: 5rem 0rem;
+}
+
+.footerContainer .footer {
+  margin: 0;
+  text-align: center;
+  color: #f4f4f9;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+/*# sourceMappingURL=style.module.css.map */

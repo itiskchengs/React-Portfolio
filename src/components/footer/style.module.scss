@@ -1,0 +1,14 @@
+@import "../../variables/variables.scss";
+
+.footerContainer{
+    background: #12263A;
+    padding: 5rem 0rem;
+    
+    .footer{
+        margin: 0;
+        text-align: center;
+        color: $offWhite;
+        font-size: 1.4rem;
+        font-weight: 300;
+    }
+}
