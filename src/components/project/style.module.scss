@@ -40,36 +40,53 @@
             display: flex;
             flex-direction: column;
 
-            .projectTitle {
-                color: $gray;
-                font-size: 3rem;
-            }
+            .projectItems {
+                margin: 8rem 0rem;
 
-            .projectDescription {
-                color: $offWhite;
-                font-size: 1.6rem;
-                line-height: 1.5;
-                font-weight: 300;
-            }
+                .projectImageContainer {
 
-            .projectLanguages {
-                color: $offWhite;
-                font-size: 1.6rem;
-                line-height: 1.5;
-                font-weight: 300;
-            }
+                    width: 100%;
 
-            .projectButtonsContainer {
-                padding-top: 2rem;
+                    img {
+                        width: 100%;
+                    }
+                }
 
-                a {
-                    padding: 1rem 2rem;
-                    background: $aquamarine;
-                    color: #000;
-                    text-decoration: none;
-                    margin: 1rem;
-                    font-size: 1.2rem;
-                    border-radius: 0.4rem;
+                .projectTitle {
+                    color: $gray;
+                    font-size: 3rem;
+                }
+
+                .projectDescription {
+                    color: $offWhite;
+                    font-size: 1.6rem;
+                    line-height: 1.5;
+                    font-weight: 300;
+                }
+
+                .projectLanguages {
+                    color: $offWhite;
+                    font-size: 1.6rem;
+                    line-height: 1.5;
+                    font-weight: 300;
+                }
+
+                .projectButtonsContainer {
+                    padding-top: 2rem;
+
+                    a {
+                        padding: 1rem 2rem;
+                        background: $aquamarine;
+                        color: #000;
+                        text-decoration: none;
+                        margin: 1rem;
+                        font-size: 1.2rem;
+                        border-radius: 0.4rem;
+
+                        &:hover{
+                            background: $yellow;
+                        }
+                    }
                 }
             }
         }
@@ -84,15 +101,27 @@
         .projectContainer {
             width: 70%;
 
-            .projectItems {
-                display: flex;
-                flex-direction: row;
-                align-content: space-between;
-                justify-content: space-between;
-                margin: 4rem;
+            .projectItemsContainer {
+                .projectItems {
+                    display: flex;
+                    flex-direction: row;
+                    align-content: space-between;
+                    justify-content: space-between;
+                    margin: 4rem 0rem;
 
-                .paragraph{
-                    width: 50%;
+                    .projectImageContainer {
+
+                        width: 50%;
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+
+                    .paragraph {
+                        width: 50%;
+                        padding: 0rem 5rem;
+                    }
                 }
             }
         }

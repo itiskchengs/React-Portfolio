@@ -4,7 +4,7 @@ import Profile from "../../assets/img/profile-picture.jpg";
 
 const About = () => {
   return (
-    <div className={style.aboutContainer}>
+    <div id="about" className={style.aboutContainer}>
       <div className={style.sectionAboutContainer}>
         <div className={style.aboutHeadingContainer}>
           <div className={style.aboutSmallHeadingContainer}>

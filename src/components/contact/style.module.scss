@@ -1,0 +1,214 @@
+@import "../../variables/variables.scss";
+
+.contactSection {
+    height: 100%;
+    background: #12263A;
+    display: flex;
+    padding-top: 10rem;
+
+    .contactContainer {
+        width: 80%;
+        margin: auto;
+
+        .contactSmallHeadingContainer {
+
+            display: flex;
+            align-items: center;
+
+            .smallContactHeading {
+                margin: 0;
+                color: $offWhite;
+                font-size: 2rem;
+            }
+
+            .smallContactHeadingLine {
+                width: 10%;
+                text-align: left;
+                margin-left: 1.5rem;
+                margin-right: auto;
+            }
+        }
+
+        .bigContactHeading {
+            margin: 0;
+            padding-top: 1rem;
+            color: $offWhite;
+            font-size: 5rem;
+        }
+
+        .formContainer {
+
+            width: 100%;
+
+            .formContacts {
+                display: flex;
+                color: $offWhite;
+                font-size: 1.5rem;
+                flex-direction: column;
+                width: 100%;
+
+                label {
+                    width: 100%;
+                    padding-top: 2rem;
+
+                    input {
+                        margin-top: 0.5rem;
+                        padding: 0.3rem;
+                    }
+                }
+
+                input[type=text] {
+                    width: 100%;
+                    padding: 1rem 2rem;
+                    display: inline-block;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    box-sizing: border-box;
+                }
+            }
+
+            .formTextArea {
+                display: flex;
+                color: $offWhite;
+                font-size: 1.5rem;
+                flex-direction: column;
+                width: 100%;
+
+                label {
+                    width: 100%;
+                    padding-top: 2rem;
+
+                    input {
+                        margin-top: 0.5rem;
+                        padding: 0.3rem;
+                    }
+                }
+
+                input[type=textarea] {
+                    width: 100%;
+                    padding: 8rem 0rem;
+                    display: inline-block;
+                    border-radius: 0.5rem;
+                }
+            }
+
+            .formSubmit {
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+
+                input[type=submit] {
+                    width: 100%;
+                    font-size: 2rem;
+                    padding: 0.85rem 0rem;
+                    background: $gray;
+                    color: $offWhite;
+                    border: none;
+                    border-radius: 0.4rem;
+                    margin-top: 2rem;
+                }
+            }
+        }
+    }
+}
+
+
+@include media-md {
+    .contactSection {
+        height: 100%;
+        display: flex;
+        padding-top: 10rem;
+        padding-bottom: 5rem;
+
+        .contactContainer {
+            width: 70%;
+
+            .formContainer {
+                width: 85%;
+                margin-left: auto;
+                margin-right: auto;
+
+                .formContacts {
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                    flex-direction: row;
+                    width: 100%;
+                    margin: 8rem 0rem 2rem 0rem;
+                    font-size: 2rem;
+                    font-weight: 400;
+
+                    label {
+                        width: 100%;
+                        margin: 0rem 0rem;
+
+                        input {
+                            margin-top: 1rem;
+                        }
+                    }
+
+                    .formLabelName{
+                        margin-right: 2rem;
+                    }
+
+                    .formLabelEmail{
+                        margin-left: 2rem;
+                    }
+
+                    input[type=text] {
+                        width: 100%;
+                        padding: 1rem 2rem;
+                        display: inline-block;
+                        border: 1px solid #ccc;
+                        border-radius: 4px;
+                        box-sizing: border-box;
+                    }
+                }
+
+                .formTextArea {
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                    width: 100%;
+                    margin: 1rem 0rem 2rem 0rem;
+                    color: $offWhite;
+                    font-size: 2rem;
+                    font-weight: 400;
+
+                    label {
+                        width: 100%;
+                        margin: 0rem 0rem;
+
+                        input {
+                            margin-top: 1rem;
+                        }
+                    }
+
+                    input[type=textarea] {
+                        width: 100%;
+                        padding: 8rem 0rem;
+                        display: inline-block;
+                    }
+                }
+
+                .formSubmit {
+                    width: 100%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    text-align: center;
+
+                    input[type=submit] {
+                        width: 50%;
+                        font-size: 2rem;
+                        padding: 0.85rem 0rem;
+                        background: $gray;
+                        color: $offWhite;
+                        border: none;
+                        border-radius: 0.4rem;
+                    }
+                }
+            }
+        }
+    }
+}

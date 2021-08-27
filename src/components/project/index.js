@@ -6,9 +6,8 @@ const Project = () => {
     const projects = projectData.map((project, index) => {
         return(
             <div className={style.projectItems} key={index}>
-              <div>
-                {/*<img src={require(`../../assets/img/${projectData.image}.png`)} alt="" />*/}
-                <img src='https://via.placeholder.com/300' alt='placeholder'/>
+              <div className={style.projectImageContainer}>
+                <img src={`assets/img/${project.image}.png`} alt="" />
               </div>
               <div className={style.paragraph}>
                 <h3 className={style.projectTitle}>{project.projectTitle}</h3>
@@ -24,7 +23,7 @@ const Project = () => {
     })
 
   return (
-    <div className={style.projectSection}>
+    <div id="projects" className={style.projectSection}>
       <div className={style.projectContainer}>
         <div className={style.projectHeadingContainer}>
           <div className={style.projectSmallHeadingContainer}>

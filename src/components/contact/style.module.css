@@ -1,0 +1,196 @@
+.contactSection {
+  height: 100%;
+  background: #12263A;
+  display: flex;
+  padding-top: 10rem;
+}
+
+.contactSection .contactContainer {
+  width: 80%;
+  margin: auto;
+}
+
+.contactSection .contactContainer .contactSmallHeadingContainer {
+  display: flex;
+  align-items: center;
+}
+
+.contactSection .contactContainer .contactSmallHeadingContainer .smallContactHeading {
+  margin: 0;
+  color: #f4f4f9;
+  font-size: 2rem;
+}
+
+.contactSection .contactContainer .contactSmallHeadingContainer .smallContactHeadingLine {
+  width: 10%;
+  text-align: left;
+  margin-left: 1.5rem;
+  margin-right: auto;
+}
+
+.contactSection .contactContainer .bigContactHeading {
+  margin: 0;
+  padding-top: 1rem;
+  color: #f4f4f9;
+  font-size: 5rem;
+}
+
+.contactSection .contactContainer .formContainer {
+  width: 100%;
+}
+
+.contactSection .contactContainer .formContainer .formContacts {
+  display: flex;
+  color: #f4f4f9;
+  font-size: 1.5rem;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contactSection .contactContainer .formContainer .formContacts label {
+  width: 100%;
+  padding-top: 2rem;
+}
+
+.contactSection .contactContainer .formContainer .formContacts label input {
+  margin-top: 0.5rem;
+  padding: 0.3rem;
+}
+
+.contactSection .contactContainer .formContainer .formContacts input[type=text] {
+  width: 100%;
+  padding: 1rem 2rem;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.contactSection .contactContainer .formContainer .formTextArea {
+  display: flex;
+  color: #f4f4f9;
+  font-size: 1.5rem;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contactSection .contactContainer .formContainer .formTextArea label {
+  width: 100%;
+  padding-top: 2rem;
+}
+
+.contactSection .contactContainer .formContainer .formTextArea label input {
+  margin-top: 0.5rem;
+  padding: 0.3rem;
+}
+
+.contactSection .contactContainer .formContainer .formTextArea input[type=textarea] {
+  width: 100%;
+  padding: 8rem 0rem;
+  display: inline-block;
+  border-radius: 0.5rem;
+}
+
+.contactSection .contactContainer .formContainer .formSubmit {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.contactSection .contactContainer .formContainer .formSubmit input[type=submit] {
+  width: 100%;
+  font-size: 2rem;
+  padding: 0.85rem 0rem;
+  background: #6c809a;
+  color: #f4f4f9;
+  border: none;
+  border-radius: 0.4rem;
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .contactSection {
+    height: 100%;
+    display: flex;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+  }
+  .contactSection .contactContainer {
+    width: 70%;
+  }
+  .contactSection .contactContainer .formContainer {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contactSection .contactContainer .formContainer .formContacts {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    width: 100%;
+    margin: 8rem 0rem 2rem 0rem;
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  .contactSection .contactContainer .formContainer .formContacts label {
+    width: 100%;
+    margin: 0rem 0rem;
+  }
+  .contactSection .contactContainer .formContainer .formContacts label input {
+    margin-top: 1rem;
+  }
+  .contactSection .contactContainer .formContainer .formContacts .formLabelName {
+    margin-right: 2rem;
+  }
+  .contactSection .contactContainer .formContainer .formContacts .formLabelEmail {
+    margin-left: 2rem;
+  }
+  .contactSection .contactContainer .formContainer .formContacts input[type=text] {
+    width: 100%;
+    padding: 1rem 2rem;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  .contactSection .contactContainer .formContainer .formTextArea {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    margin: 1rem 0rem 2rem 0rem;
+    color: #f4f4f9;
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  .contactSection .contactContainer .formContainer .formTextArea label {
+    width: 100%;
+    margin: 0rem 0rem;
+  }
+  .contactSection .contactContainer .formContainer .formTextArea label input {
+    margin-top: 1rem;
+  }
+  .contactSection .contactContainer .formContainer .formTextArea input[type=textarea] {
+    width: 100%;
+    padding: 8rem 0rem;
+    display: inline-block;
+  }
+  .contactSection .contactContainer .formContainer .formSubmit {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .contactSection .contactContainer .formContainer .formSubmit input[type=submit] {
+    width: 50%;
+    font-size: 2rem;
+    padding: 0.85rem 0rem;
+    background: #6c809a;
+    color: #f4f4f9;
+    border: none;
+    border-radius: 0.4rem;
+  }
+}
+/*# sourceMappingURL=style.module.css.map */

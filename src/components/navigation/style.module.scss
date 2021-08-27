@@ -1,5 +1,9 @@
 @import "../../variables/variables.scss";
 
+html {
+    scroll-behavior: smooth;
+}
+
 .header {
     padding: 1.5rem 0rem;
     background: $gray;
@@ -107,11 +111,7 @@
         .item {
             transform: translateX(100vw);
             display: inline-block;
-            font-size: 2rem;
-            text-transform: capitalize;
             padding: 1.5rem 0;
-            font-weight: $light;
-            color: $offWhite;
             @include transition-ease;
 
             &.open {
@@ -120,6 +120,14 @@
 
             &:hover {
                 color: $aquamarine;
+            }
+
+            a {
+                font-weight: $light;
+                color: $offWhite;
+                text-transform: capitalize;
+                font-size: 2rem;
+                text-decoration: none;
             }
         }
     }
@@ -179,7 +187,6 @@
             .item {
                 transform: none;
                 padding: 0rem 1.5rem;
-                font-size: 1.6rem;
                 line-height: 1.3;
                 letter-spacing: 0.1rem;
 
@@ -201,6 +208,10 @@
                     height: 0.15rem;
                     background: $aquamarine;
                     transition: width .3s;
+                }
+
+                a {
+                    font-size: 1.6rem;
                 }
             }
 

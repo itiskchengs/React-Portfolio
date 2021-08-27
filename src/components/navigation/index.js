@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import style from "./style.module.css";
 import logo from "../../assets/img/logo.png";
+import resume from "../../assets/img/Resume.pdf"
 
 const Navigation = () => {
   const [toggle, setToggle] = useState(false);
@@ -20,7 +21,7 @@ const Navigation = () => {
       </div>
       <nav className={`${style.nav} ${toggle ? `${style.open}` : null}`}>
       <div className={style.navLogo}>
-        <img src={logo} alt="logo" />
+        <a href="/"><img src={logo} alt="logo" /></a>
       </div>
         <ul
           className={`${style.navItemsContainer} ${
@@ -28,16 +29,16 @@ const Navigation = () => {
           }`}
         >
           <li className={`${style.item} ${toggle ? `${style.open}` : null}`}>
-            About
+            <a href="#about">About</a>
           </li>
           <li className={`${style.item} ${toggle ? `${style.open}` : null}`}>
-            Portfolio
+            <a href="#projects">Projects</a>
           </li>
           <li className={`${style.item} ${toggle ? `${style.open}` : null}`}>
-            Contact
+            <a href="#contact">Contact</a>
           </li>
           <li className={`${style.item} ${toggle ? `${style.open}` : null}`}>
-            Resume
+            <a href={resume}>Resume</a>
           </li>
         </ul>
       </nav>

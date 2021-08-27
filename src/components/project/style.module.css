@@ -40,30 +40,42 @@
   flex-direction: column;
 }
 
-.projectSection .projectContainer .projectItemsContainer .projectTitle {
+.projectSection .projectContainer .projectItemsContainer .projectItems {
+  margin: 8rem 0rem;
+}
+
+.projectSection .projectContainer .projectItemsContainer .projectItems .projectImageContainer {
+  width: 100%;
+}
+
+.projectSection .projectContainer .projectItemsContainer .projectItems .projectImageContainer img {
+  width: 100%;
+}
+
+.projectSection .projectContainer .projectItemsContainer .projectItems .projectTitle {
   color: #6c809a;
   font-size: 3rem;
 }
 
-.projectSection .projectContainer .projectItemsContainer .projectDescription {
+.projectSection .projectContainer .projectItemsContainer .projectItems .projectDescription {
   color: #f4f4f9;
   font-size: 1.6rem;
   line-height: 1.5;
   font-weight: 300;
 }
 
-.projectSection .projectContainer .projectItemsContainer .projectLanguages {
+.projectSection .projectContainer .projectItemsContainer .projectItems .projectLanguages {
   color: #f4f4f9;
   font-size: 1.6rem;
   line-height: 1.5;
   font-weight: 300;
 }
 
-.projectSection .projectContainer .projectItemsContainer .projectButtonsContainer {
+.projectSection .projectContainer .projectItemsContainer .projectItems .projectButtonsContainer {
   padding-top: 2rem;
 }
 
-.projectSection .projectContainer .projectItemsContainer .projectButtonsContainer a {
+.projectSection .projectContainer .projectItemsContainer .projectItems .projectButtonsContainer a {
   padding: 1rem 2rem;
   background: #7ae7c7;
   color: #000;
@@ -73,19 +85,30 @@
   border-radius: 0.4rem;
 }
 
+.projectSection .projectContainer .projectItemsContainer .projectItems .projectButtonsContainer a:hover {
+  background: #f8c630;
+}
+
 @media screen and (min-width: 768px) {
   .projectSection .projectContainer {
     width: 70%;
   }
-  .projectSection .projectContainer .projectItems {
+  .projectSection .projectContainer .projectItemsContainer .projectItems {
     display: flex;
     flex-direction: row;
     align-content: space-between;
     justify-content: space-between;
-    margin: 4rem;
+    margin: 4rem 0rem;
   }
-  .projectSection .projectContainer .projectItems .paragraph {
+  .projectSection .projectContainer .projectItemsContainer .projectItems .projectImageContainer {
     width: 50%;
+  }
+  .projectSection .projectContainer .projectItemsContainer .projectItems .projectImageContainer img {
+    width: 100%;
+  }
+  .projectSection .projectContainer .projectItemsContainer .projectItems .paragraph {
+    width: 50%;
+    padding: 0rem 5rem;
   }
 }
 /*# sourceMappingURL=style.module.css.map */

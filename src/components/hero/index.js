@@ -5,7 +5,7 @@ import wave from "../../assets/img/wave5.svg";
 const Hero = () => {
   const [letters, setLetters] = useState("");
 
-  const name = "Hi I'm Kenneth";
+  const name = "Hi I'm Kenny";
   const index = useRef(0);
 
   useEffect(() => {
@@ -29,7 +29,7 @@ const Hero = () => {
           <h2 id={style.heroTextHeadingTwo}>I build things for the web</h2>
         </div>
         <div className={style.heroCtaBtnContainer}>
-          <a id={style.heroCtaBtn} href="../index.html">
+          <a id={style.heroCtaBtn} href="#contact">
             Get In Touch
           </a>
         </div>
