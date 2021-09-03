@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 
 const Contact = () => {
 
-    const { register, handleSubmit, watch, formState: {error} } = useForm();
+    const { register, handleSubmit } = useForm();
     const onSubmit = data => console.log(data);
 
   return (
