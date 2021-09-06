@@ -62,6 +62,20 @@ html {
   transform: rotate(-45deg) translate(3px, -7px);
 }
 
+.navLogo img {
+  width: 42px;
+  height: 42px;
+}
+
+.navLogo {
+  display: flex;
+  position: absolute;
+  justify-content: flex-start;
+  margin: 0rem 0rem 0rem 2rem;
+  visibility: visible;
+  z-index: 1;
+}
+
 .nav {
   position: fixed;
   top: 0;
@@ -73,19 +87,6 @@ html {
 }
 
 .nav.open {
-  visibility: visible;
-}
-
-.nav .navLogo img {
-  width: 42px;
-  height: 42px;
-}
-
-.nav .navLogo {
-  display: flex;
-  position: absolute;
-  justify-content: flex-start;
-  margin: 2rem 0rem 0rem 2rem;
   visibility: visible;
 }
 
@@ -176,7 +177,7 @@ html {
   .nav {
     visibility: visible;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     position: relative;
     width: 100%;

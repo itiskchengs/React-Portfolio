@@ -1,45 +1,50 @@
 @import "../../variables/variables.scss";
 
 .socialsContainer {
-    width: 5%;
-    position: fixed;
-    bottom: 0;
-    left: 2rem;
-    right: auto;
-    z-index: 10;
-    color: $offWhite;
+    width: 100%;
+    position: relative;
+    background: #12263A;
+    padding-top: 3rem;
 
     .socialIconList {
         display: flex;
-        flex-direction: column;
-        -webkit-box-align: center;
-        align-items: center;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: center;
+        align-content: center;
         margin: 0;
         padding: 0;
         list-style-type: none;
 
         li {
-            margin: 2rem 0rem 0rem 0rem;
+            margin: 2rem 1rem;
 
-            a img:hover {
-                color: $aquamarine;
-                fill: $aquamarine;
+            a img {
+                height: 30px;
+                width: 30px;
+
+                a img:hover {
+                    color: $aquamarine;
+                    fill: $aquamarine;
+                    background: $aquamarine;
+                }
             }
-        }
-
-        &::after {
-            content: '';
-            width: 0.1rem;
-            height: 9rem;
-            margin: 0rem auto;
-            background: $offWhite;
-        }
-
-        #socialInstagram {
-            margin-bottom: 3rem;
         }
     }
 }
+
+svg:hover{
+    color:#000;
+    background:#000;
+    fill: #000;
+}
+
+#Bold:hover{
+    fill:#000;
+    background:#000;
+}
+
+
 
 .emailContainer {
     width: 5%;
@@ -49,6 +54,7 @@
     left: auto;
     z-index: 10;
     color: $offWhite;
+    visibility: hidden;
 
     .emailList {
         display: flex;
@@ -73,17 +79,63 @@
             }
         }
 
-        &::after{
+        &::after {
             content: '';
             display: block;
             width: 0.1rem;
             height: 9rem;
             margin: 0 auto;
-            background: $offWhite; 
+            background: $offWhite;
         }
     }
 }
 
 sav.feather {
     fill: none;
+}
+
+@include media-md {
+    .socialsContainer {
+        width: 5%;
+        position: fixed;
+        bottom: 0;
+        left: 2rem;
+        right: auto;
+        z-index: 10;
+        background: transparent;
+
+        .socialIconList {
+            flex-direction: column;
+            -webkit-box-align: center;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+
+            li {
+                margin: 2rem 0rem 0rem 0rem;
+
+                a img {
+                    height: 22px;
+                    width: 22px;
+                }
+            }
+
+            &::after {
+                content: '';
+                width: 0.1rem;
+                height: 9rem;
+                margin: 0rem auto;
+                background: $offWhite;
+            }
+
+            #socialInstagram {
+                margin-bottom: 3rem;
+            }
+        }
+    }
+
+    .emailContainer {
+        visibility: visible;
+    }
 }

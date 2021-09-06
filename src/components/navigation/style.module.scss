@@ -64,6 +64,20 @@ html {
     }
 }
 
+.navLogo img {
+    width: 42px;
+    height: 42px;
+}
+
+.navLogo {
+    display: flex;
+    position: absolute;
+    justify-content: flex-start;
+    margin: 0rem 0rem 0rem 2rem;
+    visibility: visible;
+    z-index: 1;
+}
+
 .nav {
     position: fixed;
     top: 0;
@@ -74,19 +88,6 @@ html {
     z-index: 1;
 
     &.open {
-        visibility: visible;
-    }
-
-    .navLogo img {
-        width: 42px;
-        height: 42px;
-    }
-
-    .navLogo {
-        display: flex;
-        position: absolute;
-        justify-content: flex-start;
-        margin: 2rem 0rem 0rem 2rem;
         visibility: visible;
     }
 
@@ -172,7 +173,7 @@ html {
         visibility: visible;
         display: flex;
         -moz-box-pack: justify;
-        justify-content: space-between;
+        justify-content: flex-end;
         -moz-box-align: center;
         align-items: center;
         position: relative;

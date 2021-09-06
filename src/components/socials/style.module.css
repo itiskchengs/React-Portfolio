@@ -1,41 +1,45 @@
 .socialsContainer {
-  width: 5%;
-  position: fixed;
-  bottom: 0;
-  left: 2rem;
-  right: auto;
-  z-index: 10;
-  color: #f4f4f9;
+  width: 100%;
+  position: relative;
+  background: #12263A;
+  padding-top: 3rem;
 }
 
 .socialsContainer .socialIconList {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: center;
+  align-content: center;
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
 .socialsContainer .socialIconList li {
-  margin: 2rem 0rem 0rem 0rem;
+  margin: 2rem 1rem;
 }
 
-.socialsContainer .socialIconList li a img:hover {
+.socialsContainer .socialIconList li a img {
+  height: 30px;
+  width: 30px;
+}
+
+.socialsContainer .socialIconList li a img a img:hover {
   color: #7ae7c7;
   fill: #7ae7c7;
+  background: #7ae7c7;
 }
 
-.socialsContainer .socialIconList::after {
-  content: '';
-  width: 0.1rem;
-  height: 9rem;
-  margin: 0rem auto;
-  background: #f4f4f9;
+svg:hover {
+  color: #000;
+  background: #000;
+  fill: #000;
 }
 
-.socialsContainer .socialIconList #socialInstagram {
-  margin-bottom: 3rem;
+#Bold:hover {
+  fill: #000;
+  background: #000;
 }
 
 .emailContainer {
@@ -46,6 +50,7 @@
   left: auto;
   z-index: 10;
   color: #f4f4f9;
+  visibility: hidden;
 }
 
 .emailContainer .emailList {
@@ -82,5 +87,44 @@
 
 sav.feather {
   fill: none;
+}
+
+@media screen and (min-width: 768px) {
+  .socialsContainer {
+    width: 5%;
+    position: fixed;
+    bottom: 0;
+    left: 2rem;
+    right: auto;
+    z-index: 10;
+    background: transparent;
+  }
+  .socialsContainer .socialIconList {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  .socialsContainer .socialIconList li {
+    margin: 2rem 0rem 0rem 0rem;
+  }
+  .socialsContainer .socialIconList li a img {
+    height: 22px;
+    width: 22px;
+  }
+  .socialsContainer .socialIconList::after {
+    content: '';
+    width: 0.1rem;
+    height: 9rem;
+    margin: 0rem auto;
+    background: #f4f4f9;
+  }
+  .socialsContainer .socialIconList #socialInstagram {
+    margin-bottom: 3rem;
+  }
+  .emailContainer {
+    visibility: visible;
+  }
 }
 /*# sourceMappingURL=style.module.css.map */

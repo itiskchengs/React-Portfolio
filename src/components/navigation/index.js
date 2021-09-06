@@ -19,10 +19,10 @@ const Navigation = () => {
           }`}
         ></span>
       </div>
-      <nav className={`${style.nav} ${toggle ? `${style.open}` : null}`}>
       <div className={style.navLogo}>
         <a href="/"><img src={logo} alt="logo" /></a>
       </div>
+      <nav className={`${style.nav} ${toggle ? `${style.open}` : null}`}>
         <ul
           className={`${style.navItemsContainer} ${
             toggle ? `${style.open}` : null
