@@ -4,7 +4,7 @@
     height: 100%;
     background: #12263A;
     display: flex;
-    padding-top: 10rem;
+    padding-top: 15rem;
 
     .projectContainer {
         width: 80%;
@@ -53,8 +53,10 @@
                 }
 
                 .projectTitle {
-                    color: $gray;
+                    color: $offWhite;
                     font-size: 3rem;
+                    margin-block-start: 0.5em;
+                    margin-block-end: 0.5em;
                 }
 
                 .projectDescription {
@@ -98,6 +100,8 @@
 
 @include media-md {
     .projectSection {
+        padding-top: 10rem;
+        height: 100%;
         .projectContainer {
             width: 70%;
 
@@ -116,6 +120,10 @@
                         img {
                             width: 100%;
                         }
+                    }
+
+                    .projectTitle {
+                        margin-block-start: 0em;
                     }
 
                     .paragraph {

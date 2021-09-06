@@ -2,6 +2,10 @@
   height: 100vh;
   background: #6c809a;
   position: relative;
+  /* #waveImage{
+        background: $gray;
+    }
+    */
 }
 
 .heroContainer .heroTextContainer {
@@ -70,10 +74,6 @@
   position: absolute;
   bottom: -4px;
   width: 100%;
-}
-
-.heroContainer #waveImage {
-  background: #6c809a;
 }
 
 @keyframes blink {

@@ -131,6 +131,25 @@ html {
   text-decoration: none;
 }
 
+.nav .navItemsContainer #resumeBtn {
+  border: 0.15rem solid #7ae7c7;
+  padding: 0.75rem 2rem;
+  border-radius: 0.2rem;
+}
+
+.nav .navItemsContainer #resumeBtn::after {
+  content: none;
+  height: 0;
+}
+
+.nav .navItemsContainer #resumeBtn:hover, .nav .navItemsContainer #resumeBtn:focus {
+  box-shadow: inset 0 -4.25em 0 0 #7ae7c7;
+  color: #f4f4f9;
+  transition: 0.35s;
+  border-color: #7ae7c7;
+  text-decoration: none;
+}
+
 .item:nth-child(1) {
   transition-delay: 0.25s;
 }

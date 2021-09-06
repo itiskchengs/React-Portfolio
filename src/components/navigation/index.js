@@ -37,8 +37,8 @@ const Navigation = () => {
           <li className={`${style.item} ${toggle ? `${style.open}` : null}`}>
             <a href="#contact">Contact</a>
           </li>
-          <li className={`${style.item} ${toggle ? `${style.open}` : null}`}>
-            <a href={resume}>Resume</a>
+          <li id={style.resumeBtn} className={`${style.item} ${toggle ? `${style.open}` : null}`}>
+            <a id={style.resumeBtnExact} href={resume}>Resume</a>
           </li>
         </ul>
       </nav>

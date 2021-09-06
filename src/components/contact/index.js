@@ -1,11 +1,6 @@
 import style from "./style.module.css";
-import { useForm } from "react-hook-form";
 
 const Contact = () => {
-
-    const { register, handleSubmit } = useForm();
-    const onSubmit = data => console.log(data);
-
   return (
     <div id="contact" className={style.contactSection}>
       <div className={style.contactContainer}>
@@ -16,28 +11,15 @@ const Contact = () => {
           </div>
           <h4 className={style.bigContactHeading}>Let's Connect</h4>
         </div>
-        <div className={style.formContainer}>
-          <form onSubmit={handleSubmit(onSubmit)}>
-            <div className={style.formContacts}>
-              <label className={style.formLabelName}>
-                Name:
-                <input defaultValue="Name" type="text" name="name" {...register("example")} />
-              </label>
-              <label className={style.formLabelEmail}>
-                Email:
-                <input defaultValue="test@test.com" type="text" name="email" {...register("exampleRequired", {required: true})}/>
-              </label>
-            </div>
-            <div className={style.formTextArea}>
-              <label>
-                Message
-                <input type="textarea" name="text" />
-              </label>
-            </div>
-            <div className={style.formSubmit}>
-              <input type="submit" value="Submit" />
-            </div>
-          </form>
+        <div className={style.contactMeContainer}>
+          <h3 className={style.contactHeaderNew}>Get In Touch</h3>
+          <p className={style.contactParagraph}>
+            My inbox is always open. Whether you have any request or question,
+            don't hesitate to message me. I will try my best to get back to you!
+          </p>
+          <div className={style.contactButtonContainer}>
+            <a className={style.contactButton} href="mailto:itskcheng@gmail.com">Message Me</a>
+          </div>
         </div>
       </div>
     </div>

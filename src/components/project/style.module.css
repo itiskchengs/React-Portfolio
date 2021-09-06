@@ -2,7 +2,7 @@
   height: 100%;
   background: #12263A;
   display: flex;
-  padding-top: 10rem;
+  padding-top: 15rem;
 }
 
 .projectSection .projectContainer {
@@ -53,8 +53,10 @@
 }
 
 .projectSection .projectContainer .projectItemsContainer .projectItems .projectTitle {
-  color: #6c809a;
+  color: #f4f4f9;
   font-size: 3rem;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
 }
 
 .projectSection .projectContainer .projectItemsContainer .projectItems .projectDescription {
@@ -90,6 +92,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .projectSection {
+    padding-top: 10rem;
+    height: 100%;
+  }
   .projectSection .projectContainer {
     width: 70%;
   }
@@ -105,6 +111,9 @@
   }
   .projectSection .projectContainer .projectItemsContainer .projectItems .projectImageContainer img {
     width: 100%;
+  }
+  .projectSection .projectContainer .projectItemsContainer .projectItems .projectTitle {
+    margin-block-start: 0em;
   }
   .projectSection .projectContainer .projectItemsContainer .projectItems .paragraph {
     width: 50%;

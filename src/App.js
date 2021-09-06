@@ -4,6 +4,7 @@ import About from './components/about';
 import Project from './components/project';
 import Contact from './components/contact';
 import Footer from './components/footer';
+import Socials from './components/socials';
 import './App.css';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Project />
       <Contact />
       <Footer />
+      <Socials />
     </div>
   );
 }
