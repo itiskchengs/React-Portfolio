@@ -2,24 +2,30 @@
   height: 100vh;
   background: #6c809a;
   position: relative;
+}
+
+.heroContainer .heroSection {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 90vh;
   /* #waveImage{
         background: $gray;
     }
     */
 }
 
-.heroContainer .heroTextContainer {
+.heroContainer .heroSection .heroTextContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  height: 90vh;
   width: 75%;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-.heroContainer .heroTextContainer #heroTextAnimationHeading {
+.heroContainer .heroSection .heroTextContainer #heroTextAnimationHeading {
   color: #7ae7c7;
   font-weight: 700;
   letter-spacing: 0.2rem;
@@ -27,7 +33,7 @@
   margin: 0;
 }
 
-.heroContainer .heroTextContainer #heroTextAnimationHeading::after {
+.heroContainer .heroSection .heroTextContainer #heroTextAnimationHeading::after {
   content: '';
   position: relative;
   width: 1px;
@@ -37,7 +43,7 @@
   animation: blink 1s linear infinite;
 }
 
-.heroContainer .heroTextContainer #heroTextHeadingTwo {
+.heroContainer .heroSection .heroTextContainer #heroTextHeadingTwo {
   color: #f4f4f9;
   font-weight: 500;
   letter-spacing: 0.1rem;
@@ -45,11 +51,11 @@
   margin: 0;
 }
 
-.heroContainer .heroTextContainer .heroCtaBtnContainer {
+.heroContainer .heroSection .heroTextContainer .heroCtaBtnContainer {
   margin-top: 3rem;
 }
 
-.heroContainer .heroTextContainer .heroCtaBtnContainer #heroCtaBtn {
+.heroContainer .heroSection .heroTextContainer .heroCtaBtnContainer #heroCtaBtn {
   color: #f4f4f9;
   border: 0.1rem solid #7ae7c7;
   padding: 1.25rem 1.75rem;
@@ -62,7 +68,7 @@
   text-decoration: none;
 }
 
-.heroContainer .heroTextContainer .heroCtaBtnContainer #heroCtaBtn:hover, .heroContainer .heroTextContainer .heroCtaBtnContainer #heroCtaBtn:focus {
+.heroContainer .heroSection .heroTextContainer .heroCtaBtnContainer #heroCtaBtn:hover, .heroContainer .heroSection .heroTextContainer .heroCtaBtnContainer #heroCtaBtn:focus {
   box-shadow: inset 0 -3.25em 0 0 #7ae7c7;
   color: #f4f4f9;
   transition: 0.35s;
@@ -70,7 +76,18 @@
   text-decoration: none;
 }
 
-.heroContainer .waveContainer {
+.heroContainer .heroSection .heroImageLogo {
+  width: 50%;
+  margin-top: 5rem;
+  margin-right: auto;
+  margin-left: 4rem;
+}
+
+.heroContainer .heroSection .heroImageLogo img {
+  width: 100%;
+}
+
+.heroContainer .heroSection .waveContainer {
   position: absolute;
   bottom: -4px;
   width: 100%;
@@ -86,28 +103,55 @@
 }
 
 @media screen and (min-width: 768px) {
-  .heroContainer .heroTextContainer {
-    width: 50% !important;
+  .heroContainer .heroSection {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: auto;
+    width: 75%;
     height: 80vh;
   }
-  .heroContainer .heroTextContainer #heroTextAnimationHeading {
+  .heroContainer .heroSection .heroTextContainer {
+    width: 85% !important;
+  }
+  .heroContainer .heroSection .heroTextContainer #heroTextAnimationHeading {
     font-size: 4rem;
   }
-  .heroContainer .heroTextContainer #heroTextHeadingTwo {
+  .heroContainer .heroSection .heroTextContainer #heroTextHeadingTwo {
     font-size: 4rem;
+  }
+  .heroContainer .heroSection .heroImageLogo {
+    width: 35%;
+    margin: 7rem auto 0 3rem;
+  }
+  .heroContainer .heroSection .heroImageLogo img {
+    width: 100%;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .heroContainer .heroTextContainer {
+  .heroContainer .heroSection {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .heroContainer .heroSection .heroTextContainer {
     width: 50% !important;
     height: 80vh;
   }
-  .heroContainer .heroTextContainer #heroTextAnimationHeading {
-    font-size: 6rem;
+  .heroContainer .heroSection .heroTextContainer #heroTextAnimationHeading {
+    font-size: 5.5rem;
   }
-  .heroContainer .heroTextContainer #heroTextHeadingTwo {
-    font-size: 6rem;
+  .heroContainer .heroSection .heroTextContainer #heroTextHeadingTwo {
+    font-size: 5.5rem;
+  }
+  .heroContainer .heroSection .heroImageLogo {
+    width: 30%;
+    margin: 7rem 0 0 0;
+  }
+  .heroContainer .heroSection .heroImageLogo img {
+    width: 100%;
   }
 }
 

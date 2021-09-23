@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import style from "./style.module.css";
 import wave from "../../assets/img/wave5.svg";
+import me from "../../assets/img/me.png";
 
 const Hero = () => {
   const [letters, setLetters] = useState("");
@@ -21,21 +22,27 @@ const Hero = () => {
 
   return (
     <div className={style.heroContainer}>
-      <div className={style.heroTextContainer}>
-        <div>
-          <h1 id={style.heroTextAnimationHeading}>{letters}</h1>
+      <div className={style.heroSection}>
+        <div className={style.heroTextContainer}>
+          <div>
+            <h1 id={style.heroTextAnimationHeading}>{letters}</h1>
+          </div>
+          <div>
+            <h2 id={style.heroTextHeadingTwo}>I build things for the web</h2>
+          </div>
+          <div className={style.heroCtaBtnContainer}>
+            <a id={style.heroCtaBtn} href="#contact">
+              Get In Touch
+            </a>
+          </div>
         </div>
-        <div>
-          <h2 id={style.heroTextHeadingTwo}>I build things for the web</h2>
+        <div className={style.heroImageLogo}>
+          <img id={me} src={me} alt="logo" />
         </div>
-        <div className={style.heroCtaBtnContainer}>
-          <a id={style.heroCtaBtn} href="#contact">
-            Get In Touch
-          </a>
-        </div>
-      </div>
+      
       <div className={style.waveContainer}>
         <img id={style.waveImage} src={wave} alt="wave"></img>
+      </div>
       </div>
     </div>
   );
